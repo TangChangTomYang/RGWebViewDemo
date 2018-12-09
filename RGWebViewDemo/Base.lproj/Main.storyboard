@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aHI-s1-rie">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SFSafariVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSg-Eb-Bkv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="301.5"/>
+                                <state key="normal" title="点击测试  SFSafariVC "/>
+                                <connections>
+                                    <action selector="SFSafariVCTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uc0-hV-y26"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tS4-JL-JCg">
+                                <rect key="frame" x="0.0" y="365.5" width="375" height="301.5"/>
+                                <state key="normal" title="点击测试  wkWebView"/>
+                                <connections>
+                                    <action selector="wkWebViewTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oal-DR-Fy8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tS4-JL-JCg" firstAttribute="top" secondItem="CSg-Eb-Bkv" secondAttribute="bottom" id="3Pr-Ca-gbT"/>
+                            <constraint firstItem="tS4-JL-JCg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9xJ-dn-xNY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tS4-JL-JCg" secondAttribute="bottom" id="V2z-sY-NpJ"/>
+                            <constraint firstItem="tS4-JL-JCg" firstAttribute="height" secondItem="CSg-Eb-Bkv" secondAttribute="height" id="Xsv-Fd-TfL"/>
+                            <constraint firstItem="CSg-Eb-Bkv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ayF-n1-H7i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tS4-JL-JCg" secondAttribute="trailing" id="ege-K5-h3m"/>
+                            <constraint firstItem="CSg-Eb-Bkv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jB9-rR-CiN"/>
+                            <constraint firstItem="CSg-Eb-Bkv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xTR-Cy-g0G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SFSafariVC" id="ffc-12-grO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815.20000000000005" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JSZ-Rh-tgK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aHI-s1-rie" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ad5-ug-12U">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="X6b-VF-mo0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wAk-RK-Gx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="133"/>
+        </scene>
+    </scenes>
+</document>
